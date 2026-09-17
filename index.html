@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Builder Reserve — Infinity Phi</title>
+<meta name="description" content="Builder Reserve indexes Infinity Phi purple semantic cards so a website can be explored subject by subject.">
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17121f;background:#faf8ff}*{box-sizing:border-box}body{margin:0}.wrap{max-width:980px;margin:auto;padding:28px 18px 70px}.head{display:flex;gap:14px;align-items:center;justify-content:space-between;margin-bottom:24px}.brand{font-weight:950;font-size:clamp(28px,7vw,48px)}.sub{color:#665b72;max-width:650px;line-height:1.5}.home{background:#6f3cc3;color:white;text-decoration:none;padding:11px 15px;border-radius:999px;font-weight:850}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.card{border:2px solid #9c6ade;background:linear-gradient(145deg,#f7edff,#e8d4ff);border-radius:22px;padding:18px;box-shadow:0 9px 24px #4b23631a;cursor:pointer;text-align:left;color:#201329}.card:hover{transform:translateY(-2px)}.card h2{font-size:19px;margin:0 0 8px}.card p{margin:0;color:#584268;line-height:1.45}.empty{padding:34px;border:2px dashed #c7addf;border-radius:22px;text-align:center;color:#695979}.meta{font-size:12px;font-weight:850;color:#7c43b8;text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px}
+</style>
+</head>
+<body><main class="wrap"><header class="head"><div><div class="brand">Builder Reserve</div><p class="sub">The purple-card reserve for websites built through Infinity Phi. Open a subject to send its indexed words back through Infinity Phi and build a deeper, more specific research path.</p></div><a class="home" href="https://www-infinity4.github.io/C13b0/">Infinity Phi</a></header><section id="cards" class="grid"></section></main>
+<script>
+const KEY='builderReserve:purpleCards:v1';
+const INFINITY='https://www-infinity4.github.io/C13b0/';
+function clean(v,n=900){return String(v||'').replace(/\s+/g,' ').trim().slice(0,n)}
+function load(){try{const x=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(x)?x:[]}catch{return[]}}
+function queryFor(c){return clean(c.indexedWords||c.query||[c.title,c.body,c.subject,c.focus].filter(Boolean).join(' '),500)}
+function openCard(c){const q=queryFor(c);if(!q)return;location.href=`${INFINITY}?q=${encodeURIComponent(q)}&run=1&from=builder-reserve`}
+function render(){const root=document.querySelector('#cards'),cards=load();root.innerHTML='';if(!cards.length){root.innerHTML='<div class="empty">Purple semantic cards saved from Infinity Phi will appear here.</div>';return}cards.forEach((c,i)=>{const b=document.createElement('button');b.className='card';b.innerHTML=`<div class="meta">Reserved subject ${i+1}</div><h2>${clean(c.title||c.subject||'Builder subject',180)}</h2><p>${clean(c.body||c.description||c.focus||queryFor(c),500)}</p>`;b.onclick=()=>openCard(c);root.appendChild(b)})}render();window.addEventListener('storage',e=>{if(e.key===KEY)render()});
+</script></body></html>
