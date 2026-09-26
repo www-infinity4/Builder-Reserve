@@ -1,0 +1,20 @@
+{
+  "schemaVersion":1,
+  "id":"santas-helper",
+  "repository":"www-infinity4/Santas-Helper",
+  "blueprint":"blueprints/santas-helper.json",
+  "template":"templates/generated-site",
+  "pageAssembly":"templates/affiliate-shopping-guide/pages.json",
+  "theme":{"id":"santas-helper-christmas","mobileFirst":true,"siteSpecific":true},
+  "requiredSharedCapabilities":[
+    "wallet-ui","starcoin-balance","shared-session","share-bridge","collect-action",
+    "product-search","product-card","affiliate-attribution","merchant-adapters",
+    "commerce-analytics","affiliate-disclosure"
+  ],
+  "handoff":{
+    "copy":["generated manifest","site-specific layout","public runtime config","thin adapters"],
+    "reference":["Unified-Wallet","StarQuest identity","Commerce-Phi contracts"],
+    "neverCopy":["ledger authority","wallet balances","credentials","merchant secrets","conversion authority"]
+  },
+  "deployment":{"frontend":"GitHub Pages compatible","services":"Cloudflare-backed shared services","preserveSharedState":true}
+}
