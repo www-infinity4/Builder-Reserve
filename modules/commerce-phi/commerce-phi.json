@@ -1,0 +1,25 @@
+{
+  "schemaVersion":1,
+  "id":"commerce-phi",
+  "version":"0.1.0-seed",
+  "kind":"commerce",
+  "source":{"repository":"www-infinity4/Builder-Reserve","entrypoint":"modules/commerce-phi/commerce-phi.json"},
+  "capabilities":["product-search","product-card","affiliate-attribution","merchant-adapters","commerce-analytics","affiliate-disclosure"],
+  "authority":"shared-module",
+  "install":{"strategy":"generated-adapter"},
+  "requires":["starquest-identity"],
+  "interfaces":{
+    "search":{"input":["query","filters","limit"],"output":["products"]},
+    "product":{"required":["productId","merchantId","title","destinationUrl"],"optional":["image","price","currency","availability","description","updatedAt"]},
+    "outboundClick":{"required":["eventId","productId","merchantId","destinationUrl","occurredAt"]},
+    "conversion":{"required":["networkEventId","merchantId","status","reportedAt"],"optional":["orderReference","commissionAmount","currency"]}
+  },
+  "rules":[
+    "merchant or affiliate network is authoritative for conversion and commission",
+    "never infer a sale from a click",
+    "never invent current price or availability",
+    "keep wallet rewards separate from merchant commission accounting",
+    "affiliate relationships must be disclosed near monetized recommendations",
+    "merchant adapters normalize data; generated sites do not hard-code retailer APIs"
+  ]
+}
