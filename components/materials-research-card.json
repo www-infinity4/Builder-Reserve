@@ -1,0 +1,13 @@
+{
+  "id":"materials-research-card",
+  "role":"research-card",
+  "requires":["materials-computing-record"],
+  "data":{"schema":"schemas/materials-computing.schema.json"},
+  "slots":["title","evidence-status","materials","mechanisms","fabrication","sources"],
+  "rules":[
+    "Always display evidence status.",
+    "Never hide an empty source list.",
+    "Do not promote candidate or hypothesis mechanisms to established.",
+    "Do not generate numerical fabrication or performance values without sourced evidence."
+  ]
+}
