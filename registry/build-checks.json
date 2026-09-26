@@ -1,0 +1,14 @@
+{
+  "schemaVersion":1,
+  "checks":[
+    {"id":"reuse-first","severity":"error","rule":"registered capabilities are reused instead of copied/reimplemented"},
+    {"id":"wallet-authority","severity":"error","rule":"frontend is not authoritative for StarCoin balance"},
+    {"id":"no-secrets","severity":"error","rule":"frontend files contain no API, affiliate, ledger or client secrets"},
+    {"id":"idempotency","severity":"error","rule":"money/reward/commission events use stable idempotency identifiers"},
+    {"id":"disclosure","severity":"error","rule":"monetized recommendations include reachable affiliate/ad disclosure"},
+    {"id":"merchant-checkout","severity":"error","rule":"payment card handling remains with merchant unless an approved payment module exists"},
+    {"id":"unresolved-capabilities","severity":"warning","rule":"builder reports capabilities with no registered module"},
+    {"id":"mobile-layout","severity":"warning","rule":"generated reference sites remain usable at narrow phone widths"},
+    {"id":"share-return","severity":"warning","rule":"shared content retains a route back to the generated site"}
+  ]
+}
