@@ -1,0 +1,24 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://www-infinity4.github.io/Builder-Reserve/schemas/merchant-connector.schema.json",
+  "title":"Commerce Phi Merchant Connector",
+  "type":"object",
+  "required":["id","merchantId","capabilities","productMap","attribution"],
+  "properties":{
+    "id":{"type":"string","pattern":"^[a-z0-9-]+$"},
+    "merchantId":{"type":"string","minLength":1},
+    "capabilities":{"type":"array","items":{"enum":["search","lookup","price","availability","affiliate-link","conversion-report"]},"uniqueItems":true},
+    "productMap":{"type":"object","required":["productId","title","destinationUrl"]},
+    "attribution":{
+      "type":"object",
+      "required":["strategy"],
+      "properties":{
+        "strategy":{"enum":["query-param","network-link","api-generated-link","none"]},
+        "requiresCredential":{"type":"boolean"}
+      }
+    },
+    "freshness":{"type":"object","properties":{"priceTtlSeconds":{"type":"integer","minimum":0},"availabilityTtlSeconds":{"type":"integer","minimum":0}}},
+    "disclosure":{"type":"string"}
+  },
+  "additionalProperties":true
+}
