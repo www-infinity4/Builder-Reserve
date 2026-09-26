@@ -1,0 +1,16 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://www-infinity4.github.io/Builder-Reserve/schemas/generated-site.schema.json",
+  "title":"Infinity Generated Site Manifest",
+  "type":"object",
+  "required":["id","name","blueprint","modules","pages"],
+  "properties":{
+    "id":{"type":"string"},
+    "name":{"type":"string"},
+    "blueprint":{"type":"string"},
+    "modules":{"type":"array","items":{"type":"object","required":["id","mode"],"properties":{"id":{"type":"string"},"mode":{"enum":["script","package","service","adapter"]},"source":{"type":["string","null"]}}}},
+    "pages":{"type":"array","items":{"type":"string"}},
+    "runtime":{"type":"object"},
+    "generatedAt":{"type":"string"}
+  }
+}
