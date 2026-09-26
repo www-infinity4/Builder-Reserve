@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "record-provenance.schema.json",
+  "title": "Record Provenance",
+  "type": "object",
+  "required": [
+    "recordId",
+    "origin",
+    "capturedAt",
+    "verification"
+  ],
+  "properties": {
+    "recordId": {
+      "type": "string"
+    },
+    "origin": {
+      "enum": [
+        "user-supplied",
+        "external-source",
+        "builder-generated",
+        "verified-filing",
+        "system-record"
+      ]
+    },
+    "capturedAt": {
+      "type": "string"
+    },
+    "originalDate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "originalWordingPreserved": {
+      "type": "boolean"
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "unverified",
+            "partially-verified",
+            "verified",
+            "contradicted",
+            "not-applicable"
+          ]
+        },
+        "method": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "sourceRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "transformations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "none",
+              "structured",
+              "normalized",
+              "summarized",
+              "translated",
+              "redacted"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
