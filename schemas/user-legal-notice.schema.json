@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "user-legal-notice.schema.json",
+  "title": "User-Supplied Legal Notice Record",
+  "type": "object",
+  "required": [
+    "id",
+    "recordType",
+    "title",
+    "issued",
+    "issuer",
+    "subject",
+    "demands",
+    "legalStatus",
+    "interpretationRules"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "recordType": {
+      "const": "user-supplied-legal-notice"
+    },
+    "title": {
+      "type": "string"
+    },
+    "issued": {
+      "type": "string",
+      "format": "date"
+    },
+    "issuer": {
+      "type": "object"
+    },
+    "recipients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "subject": {
+      "type": "string"
+    },
+    "demands": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reservations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "legalStatus": {
+      "enum": [
+        "user-asserted-unverified",
+        "verified-filing",
+        "verified-order",
+        "superseded",
+        "unknown"
+      ]
+    },
+    "interpretationRules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

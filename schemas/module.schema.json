@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www-infinity4.github.io/Builder-Reserve/schemas/module.schema.json",
+  "title": "Infinity Site Builder Module",
+  "type": "object",
+  "required": ["id","version","kind","source","capabilities","authority","install"],
+  "properties": {
+    "id": {"type":"string","pattern":"^[a-z0-9-]+$"},
+    "version": {"type":"string"},
+    "kind": {"enum":["wallet","identity","actions","search","commerce","media","analytics","navigation","content","deployment"]},
+    "source": {
+      "type":"object",
+      "required":["repository"],
+      "properties":{"repository":{"type":"string"},"entrypoint":{"type":"string"}}
+    },
+    "capabilities":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "authority":{"enum":["cloud-ledger","cloud-service","shared-module","site-local"]},
+    "install": {
+      "type":"object",
+      "required":["strategy"],
+      "properties":{
+        "strategy":{"enum":["script","package","service","generated-adapter"]},
+        "url":{"type":"string"},
+        "package":{"type":"string"}
+      }
+    },
+    "requires":{"type":"array","items":{"type":"string"},"default":[]},
+    "forbids":{"type":"array","items":{"type":"string"},"default":[]}
+  },
+  "additionalProperties": true
+}

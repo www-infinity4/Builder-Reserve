@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "name": "Infinity Unified Site Builder Seeds",
+  "principle": "Generated sites compose shared capabilities instead of rebuilding them.",
+  "required": [
+    {
+      "id": "wallet",
+      "repo": "www-infinity4/Unified-Wallet",
+      "purpose": "Shared StarCoin and Infinity wallet interface backed by authoritative ledgers",
+      "rules": ["never reset balances from frontend code", "never let browser choose reward amounts", "use stable action/reference IDs"]
+    },
+    {
+      "id": "identity",
+      "service": "StarQuest",
+      "purpose": "One authenticated identity/session across generated sites"
+    },
+    {
+      "id": "share-collect",
+      "service": "Control-Phi",
+      "purpose": "Shared actions and navigation",
+      "status": "migration-needed",
+      "target": "authoritative StarQuest/D1 credits only; remove local balance authority"
+    }
+  ],
+  "commerce": [
+    {"id":"product-search","purpose":"merchant-neutral product retrieval with current price and availability"},
+    {"id":"affiliate-attribution","purpose":"impression -> click -> merchant -> conversion/commission trail"},
+    {"id":"product-card","purpose":"reusable product image, description, merchant link, share, collect and disclosure"},
+    {"id":"merchant-adapters","purpose":"add retailers without rebuilding the generated site"},
+    {"id":"analytics","purpose":"impressions, clicks, reported conversions, commissions and wallet actions"},
+    {"id":"disclosure","purpose":"affiliate/ad disclosure and privacy surface"}
+  ],
+  "builderContract": {
+    "siteOwns": ["theme", "copy", "layout", "site-specific recommendation rules"],
+    "sharedModulesOwn": ["wallet", "identity", "ledger persistence", "attribution", "merchant adapters", "analytics"],
+    "forbidden": ["duplicate wallet implementation", "localStorage as authoritative money ledger", "client-selected reward amount", "invented sale/conversion"]
+  },
+  "firstReferenceSite": "Santas-Helper"
+}

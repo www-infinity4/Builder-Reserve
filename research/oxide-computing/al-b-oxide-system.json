@@ -1,0 +1,21 @@
+{
+  "schemaVersion":1,
+  "id":"oxide-computing-al-b",
+  "title":"Aluminum/Boron Oxide Computing Research Seed",
+  "materials":[
+    {"formula":"Al2O3","role":"base dielectric / oxide matrix","propertiesOfInterest":["insulation","defect trapping","interfaces"]},
+    {"formula":"B2O3","role":"network-forming oxide","propertiesOfInterest":["amorphous network formation","local bonding environment"]},
+    {"formula":"TiO2","role":"candidate switching oxide","propertiesOfInterest":["Ti4+/Ti3+ redox","oxygen-vacancy defects"]},
+    {"formula":"SiO2","role":"candidate network stabilizer","propertiesOfInterest":["stable oxide network","matrix spacing"]},
+    {"formula":"Ga2O3","role":"candidate wide-bandgap oxide","propertiesOfInterest":["wide bandgap","heterointerfaces"]},
+    {"formula":"Fe2O3 / Fe3O4","role":"candidate mixed-valence oxide","propertiesOfInterest":["variable oxidation state","hopping transport"]}
+  ],
+  "mechanisms":[
+    {"name":"oxygen-vacancy migration","status":"candidate","notes":"Evaluate resistive/memristive switching only with device-specific evidence."},
+    {"name":"orbital hybridization","status":"hypothesis","notes":"Do not equate a localized orbital landscape with Boolean logic without demonstrated switching and readout."},
+    {"name":"interfacial charge transfer","status":"candidate","notes":"Interface behavior depends on composition, structure, defects, electrodes and fabrication."}
+  ],
+  "fabrication":{"method":"unspecified","variables":["stoichiometry","layer thickness","deposition method","annealing","oxygen chemical potential","electrode material","temperature"]},
+  "evidenceStatus":"conceptual",
+  "sources":[]
+}

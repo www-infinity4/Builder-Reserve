@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"materials-computing.schema.json",
+  "title":"Materials Computing Research Record",
+  "type":"object",
+  "required":["id","materials","mechanisms","evidenceStatus"],
+  "properties":{
+    "id":{"type":"string"},
+    "materials":{"type":"array","items":{"type":"object","required":["formula","role"],"properties":{"formula":{"type":"string"},"role":{"type":"string"},"propertiesOfInterest":{"type":"array","items":{"type":"string"}}}}},
+    "mechanisms":{"type":"array","items":{"type":"object","required":["name","status"],"properties":{"name":{"type":"string"},"status":{"enum":["established","candidate","hypothesis","unknown"]},"notes":{"type":"string"}}}},
+    "fabrication":{"type":"object","properties":{"method":{"type":"string"},"variables":{"type":"array","items":{"type":"string"}}}},
+    "evidenceStatus":{"enum":["literature-backed","mixed-evidence","conceptual","unverified"]},
+    "sources":{"type":"array","items":{"type":"string","format":"uri"}}
+  }
+}

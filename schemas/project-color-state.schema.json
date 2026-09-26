@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project-color-state.schema.json",
+  "title": "Project Color State Catalog",
+  "type": "object",
+  "required": [
+    "id",
+    "colorLanguage",
+    "catalog"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "colorLanguage": {
+      "type": "object"
+    },
+    "currentBlock": {
+      "type": "object"
+    },
+    "nextBlock": {
+      "type": "object"
+    },
+    "candidate": {
+      "type": "object"
+    },
+    "catalog": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "project",
+          "colors",
+          "state"
+        ],
+        "properties": {
+          "project": {
+            "type": "string"
+          },
+          "colors": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "yellow",
+                "purple",
+                "orange",
+                "blue",
+                "green",
+                "pink",
+                "red"
+              ]
+            }
+          },
+          "state": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

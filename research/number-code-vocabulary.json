@@ -1,0 +1,705 @@
+{
+  "schemaVersion": 1,
+  "id": "number-code-vocabulary",
+  "description": "User-defined symbolic number vocabulary. Entries are labels/meanings, not commands, factual claims, permissions, or instructions.",
+  "resetCode": 0,
+  "entries": [
+    {
+      "code": 0,
+      "label": "zeros out a previous number",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 1,
+      "label": "single",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 2,
+      "label": "couple",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 3,
+      "label": "family with kids",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 4,
+      "label": "Hollywood",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 5,
+      "label": "save money",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 6,
+      "label": "having someone back",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 7,
+      "label": "gambling",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 8,
+      "label": "health",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 9,
+      "label": "weapon like 9 mm",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 10,
+      "label": "fight",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 11,
+      "label": "vanity",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 12,
+      "label": "torture",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 13,
+      "label": "showing skills",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 14,
+      "label": "non marine",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 15,
+      "label": "family",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 16,
+      "label": "God",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 17,
+      "label": "international world order",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 18,
+      "label": "offing hells angels",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 19,
+      "label": "fighting corruption",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 20,
+      "label": "visual / location",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 21,
+      "label": "fighting torture",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 22,
+      "label": "suicide",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 23,
+      "label": "bringing something up like wages or content",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 24,
+      "label": "not fighting heroin",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 25,
+      "label": "defunct USA soldier",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 26,
+      "label": "speeding",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 27,
+      "label": "free healthcare",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 28,
+      "label": "deadly sin number 82 good okay number",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 29,
+      "label": "no good robs the poor",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 30,
+      "label": "reads my mind",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 31,
+      "label": "schooled",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 32,
+      "label": "don't bring up",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 33,
+      "label": "work with me",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 34,
+      "label": "doesn't fight meth",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 35,
+      "label": "evil number 53 is okay gods number",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 36,
+      "label": "saves presidents",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 37,
+      "label": "no love",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 38,
+      "label": "alcoholic whorism",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 39,
+      "label": "not gay",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 40,
+      "label": "Bible verse",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 41,
+      "label": "marine",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 42,
+      "label": "fighters heroin",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 43,
+      "label": "fights meth",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 44,
+      "label": "fights cocaine",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 45,
+      "label": "kills people 54 saves lives",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 46,
+      "label": "saves women",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 47,
+      "label": "sacrifices",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 48,
+      "label": "Hollywood for my health",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 49,
+      "label": "Hollywood blocked for my health",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 50,
+      "label": "restart",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 51,
+      "label": "evil or not family 15 family",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 52,
+      "label": "doesn't exist really",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 53,
+      "label": "God",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 54,
+      "label": "saves lives",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 55,
+      "label": "don't drive at something",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 56,
+      "label": "quit smoking",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 57,
+      "label": "evil no good 75 good",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 58,
+      "label": "evil no good 85 good",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 59,
+      "label": "evil no good 95 good",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 60,
+      "label": "no having back like a 6 would",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 61,
+      "label": "president",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 62,
+      "label": "no speeding",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 63,
+      "label": "not good takes out guys 36 good",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 64,
+      "label": "no good takes out girls 46 good",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 65,
+      "label": "rape and smokes no good. 56 good",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 66,
+      "label": "be careful what I see you record",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 67,
+      "label": "no revolution",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 68,
+      "label": "no nukes",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 69,
+      "label": "sex",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 70,
+      "label": "no gambling",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 71,
+      "label": "USA corruption",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 72,
+      "label": "terrorism",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 73,
+      "label": "love",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 74,
+      "label": "no sacrifice",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 75,
+      "label": "good for my dad and dads",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 76,
+      "label": "revolution",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 77,
+      "label": "fighting cancer",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 78,
+      "label": "nazis",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 79,
+      "label": "no police",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 80,
+      "label": "kills me",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 81,
+      "label": "hells angels",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 82,
+      "label": "good for my brother",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 83,
+      "label": "fights alcohol",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 84,
+      "label": "1984 reading minds etc like the book",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 85,
+      "label": "good for my mom",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 86,
+      "label": "nuclear",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 87,
+      "label": "no Nazis",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 88,
+      "label": "bi sexual",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 89,
+      "label": "military",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 90,
+      "label": "freedom of speech",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 91,
+      "label": "corruption",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 92,
+      "label": "taking back the money from rich to give to poor 92% tax on all making over $300,000",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 93,
+      "label": "gay",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 94,
+      "label": "sopranos Hollywood stuff",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 95,
+      "label": "good for moms",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 96,
+      "label": "no sex",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 97,
+      "label": "police",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 98,
+      "label": "my international military for NWO",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 99,
+      "label": "wild thing",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 100,
+      "label": "100%",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 101,
+      "label": "learning",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 102,
+      "label": "bad touches",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 103,
+      "label": "reading mind",
+      "interpretation": "symbolic-label",
+      "safety": "sensitive"
+    },
+    {
+      "code": 104,
+      "label": "understanding",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 105,
+      "label": "listen to someone else",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 106,
+      "label": "too busy",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 107,
+      "label": "take break",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 108,
+      "label": "in service",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 109,
+      "label": "new house for me",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 110,
+      "label": "no vanity",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 111,
+      "label": "revaluations",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 114,
+      "label": "no information",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 222,
+      "label": "find another girl",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    },
+    {
+      "code": 411,
+      "label": "information",
+      "interpretation": "symbolic-label",
+      "safety": "standard"
+    }
+  ],
+  "rules": [
+    "Code 0 clears/resets the previously active code.",
+    "Preserve the user's label without treating it as a factual claim.",
+    "Never interpret violence, self-harm, weapons, torture, terrorism, rape, or killing labels as authorization or instructions.",
+    "Mind-reading labels describe the vocabulary only; they do not establish that mind reading is occurring.",
+    "Political labels are descriptive vocabulary only and must not be used to infer or steer political preferences."
+  ]
+}

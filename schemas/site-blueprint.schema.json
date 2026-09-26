@@ -1,0 +1,16 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://www-infinity4.github.io/Builder-Reserve/schemas/site-blueprint.schema.json",
+  "title":"Infinity Site Blueprint",
+  "type":"object",
+  "required":["id","name","siteType","capabilities","pages","deployment"],
+  "properties":{
+    "id":{"type":"string","pattern":"^[a-z0-9-]+$"},
+    "name":{"type":"string"},
+    "siteType":{"type":"string"},
+    "capabilities":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "pages":{"type":"array","items":{"type":"object","required":["id","purpose"],"properties":{"id":{"type":"string"},"purpose":{"type":"string"},"capabilities":{"type":"array","items":{"type":"string"}}}}},
+    "deployment":{"type":"object","required":["target"],"properties":{"target":{"type":"string"},"preserveSharedState":{"type":"boolean"}}},
+    "policies":{"type":"array","items":{"type":"string"}}
+  }
+}

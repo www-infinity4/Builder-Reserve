@@ -1,0 +1,22 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://www-infinity4.github.io/Builder-Reserve/schemas/commerce-event.schema.json",
+  "title":"Commerce Phi Event",
+  "type":"object",
+  "required":["eventId","eventType","occurredAt","siteId"],
+  "properties":{
+    "eventId":{"type":"string","minLength":1},
+    "eventType":{"enum":["product-impression","outbound-click","conversion-reported","commission-reported","wallet-action"]},
+    "occurredAt":{"type":"string","format":"date-time"},
+    "siteId":{"type":"string","minLength":1},
+    "sessionId":{"type":["string","null"]},
+    "productId":{"type":["string","null"]},
+    "merchantId":{"type":["string","null"]},
+    "sourceEventId":{"type":["string","null"]},
+    "status":{"type":["string","null"]},
+    "amount":{"type":["number","null"]},
+    "currency":{"type":["string","null"]},
+    "authority":{"enum":["site-observation","merchant","affiliate-network","wallet-ledger"]}
+  },
+  "additionalProperties":true
+}

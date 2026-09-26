@@ -1,0 +1,14 @@
+{
+  "schemaVersion":1,
+  "components":[
+    {"id":"site-header","role":"header","requires":[],"slots":["brand","navigation","wallet"],"data":[]},
+    {"id":"gift-search","role":"search","requires":["product-search"],"slots":["query","filters","submit"],"data":["search-query"]},
+    {"id":"product-results","role":"results","requires":["product-search","product-card"],"slots":["summary","cards","load-more"],"data":["products"]},
+    {"id":"commerce-product-card","role":"product-card","requires":["product-card","affiliate-attribution"],"slots":["image","title","price","description","merchant","actions","disclosure"],"data":["normalized-product"]},
+    {"id":"commerce-product-detail","role":"product-detail","requires":["product-card","merchant-adapters","affiliate-attribution"],"slots":["media","story","price","availability","merchant-action","share","collect","disclosure"],"data":["normalized-product"]},
+    {"id":"unified-wallet-host","role":"wallet-host","requires":["wallet-ui","starcoin-balance","shared-session"],"slots":["wallet-trigger","wallet-panel"],"data":["wallet-state"]},
+    {"id":"shared-actions","role":"share-actions","requires":["share-bridge","collect-action"],"slots":["share","collect"],"data":["content-reference"]},
+    {"id":"affiliate-disclosure","role":"disclosure","requires":["affiliate-disclosure"],"slots":["summary","details","privacy"],"data":[]},
+    {"id":"site-footer","role":"footer","requires":[],"slots":["navigation","disclosure-link","copyright"],"data":[]}
+  ]
+}

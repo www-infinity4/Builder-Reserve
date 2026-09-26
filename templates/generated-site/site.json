@@ -1,0 +1,11 @@
+{
+  "schemaVersion":1,
+  "id":"generated-site-id",
+  "name":"Generated Site",
+  "blueprint":"blueprints/example.json",
+  "modules":[],
+  "pages":[],
+  "runtime":{"publicConfig":"config/runtime.js"},
+  "generatedAt":null,
+  "builder":{"source":"www-infinity4/Builder-Reserve","reuseFirst":true}
+}

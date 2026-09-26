@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "number-code-vocabulary.schema.json",
+  "title": "Number Code Vocabulary",
+  "type": "object",
+  "required": [
+    "id",
+    "resetCode",
+    "entries",
+    "rules"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "resetCode": {
+      "type": "integer"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "label",
+          "interpretation",
+          "safety"
+        ],
+        "properties": {
+          "code": {
+            "type": "integer"
+          },
+          "label": {
+            "type": "string"
+          },
+          "interpretation": {
+            "const": "symbolic-label"
+          },
+          "safety": {
+            "enum": [
+              "standard",
+              "sensitive"
+            ]
+          }
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

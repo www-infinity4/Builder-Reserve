@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "speculative-physics-concept.schema.json",
+  "title": "Speculative Physics Concept Record",
+  "type": "object",
+  "required": [
+    "id",
+    "classification",
+    "elementMap",
+    "blocks",
+    "physicsNotes",
+    "safety"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "classification": {
+      "enum": [
+        "speculative-concept",
+        "hypothesis",
+        "literature-backed",
+        "mixed-evidence"
+      ]
+    },
+    "elementMap": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "element",
+          "atomicNumber",
+          "proposedRole"
+        ],
+        "properties": {
+          "element": {
+            "type": "string"
+          },
+          "atomicNumber": {
+            "type": "integer"
+          },
+          "proposedRole": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "compounds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "physicsNotes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "safety": {
+      "type": "object"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  }
+}

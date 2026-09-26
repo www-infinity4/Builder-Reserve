@@ -1,0 +1,36 @@
+{
+  "schemaVersion":1,
+  "id":"santas-helper",
+  "name":"Santa's Helper",
+  "siteType":"affiliate-shopping-guide",
+  "description":"Christmas gift discovery and recommendation site assembled from reusable Infinity modules.",
+  "capabilities":[
+    "wallet-ui",
+    "starcoin-balance",
+    "shared-session",
+    "share-bridge",
+    "collect-action",
+    "product-search",
+    "affiliate-attribution",
+    "product-card",
+    "merchant-adapters",
+    "commerce-analytics",
+    "affiliate-disclosure"
+  ],
+  "pages":[
+    {"id":"home","purpose":"Gift discovery, categories and recommendation search","capabilities":["product-search","product-card"]},
+    {"id":"results","purpose":"Rank products against the shopper's request","capabilities":["product-search","product-card","share-bridge","collect-action"]},
+    {"id":"gift","purpose":"Product detail and tracked merchant handoff","capabilities":["product-card","affiliate-attribution","merchant-adapters"]},
+    {"id":"wallet","purpose":"Shared Infinity wallet surface","capabilities":["wallet-ui","starcoin-balance"]},
+    {"id":"about-disclosure","purpose":"Explain affiliate relationships and privacy","capabilities":["affiliate-disclosure"]}
+  ],
+  "deployment":{"target":"github-pages-cloudflare-services","preserveSharedState":true},
+  "policies":[
+    "merchant checkout owns payment-card handling",
+    "affiliate links must be disclosed",
+    "reported merchant/network conversion is authoritative for commission",
+    "never invent current price or availability",
+    "never create a site-local StarCoin ledger",
+    "reuse registered capabilities before generating replacements"
+  ]
+}

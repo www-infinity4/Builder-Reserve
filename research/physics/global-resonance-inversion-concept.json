@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "global-resonance-inversion-concept",
+  "title": "Global Resonance Inversion System — Concept Record",
+  "classification": "speculative-concept",
+  "purpose": "Pattern/context record for comparing element-number relationships, sensing concepts, materials roles and proposed system blocks.",
+  "elementMap": [
+    {
+      "element": "Helium",
+      "atomicNumber": 2,
+      "proposedRole": "discharge medium"
+    },
+    {
+      "element": "Carbon",
+      "atomicNumber": 6,
+      "proposedRole": "energy buffer / carbon supercapacitor concept"
+    },
+    {
+      "element": "Oxygen",
+      "atomicNumber": 8,
+      "proposedRole": "atmospheric reference / proposed emission medium"
+    },
+    {
+      "element": "Iron",
+      "atomicNumber": 26,
+      "proposedRole": "electromagnetic layer"
+    },
+    {
+      "element": "Arsenic",
+      "atomicNumber": 33,
+      "proposedRole": "proposed processor layer"
+    },
+    {
+      "element": "Dysprosium",
+      "atomicNumber": 66,
+      "proposedRole": "magnetic layer"
+    },
+    {
+      "element": "Iridium",
+      "atomicNumber": 77,
+      "proposedRole": "proposed processing/bridge layer"
+    },
+    {
+      "element": "Radon",
+      "atomicNumber": 86,
+      "proposedRole": "proposed ionization/clock layer"
+    },
+    {
+      "element": "Uranium",
+      "atomicNumber": 92,
+      "proposedRole": "proposed energy layer"
+    }
+  ],
+  "compounds": [
+    "KCl",
+    "KI"
+  ],
+  "blocks": [
+    {
+      "name": "scanning",
+      "status": "speculative",
+      "notes": "Global ULF mapping and atom-by-atom atmospheric inversion are not treated as demonstrated capabilities."
+    },
+    {
+      "name": "inversed micro-map",
+      "status": "speculative",
+      "notes": "Salt-core global holographic mapping is retained as a concept, not a verified physical mechanism."
+    },
+    {
+      "name": "perturbation detection",
+      "status": "mixed-concept",
+      "notes": "Remote sensing and electromagnetic anomaly detection exist broadly, but the described global atomic localization mechanism requires evidence."
+    },
+    {
+      "name": "active counter-resonance",
+      "status": "non-executable",
+      "notes": "Stored only as conceptual context; no targeting, EMP, disabling, or beam-construction instructions are generated."
+    },
+    {
+      "name": "carbon energy buffer",
+      "status": "candidate-material-analogy",
+      "notes": "Carbon/graphene supercapacitor concepts are separable from the claimed global resonance mechanism."
+    }
+  ],
+  "physicsNotes": [
+    "Matching atomic species do not imply that vibrating one local sample makes every matching atom on Earth respond through entanglement.",
+    "NQR is a local spectroscopic phenomenon for suitable quadrupolar nuclei and does not by itself provide global atom-to-atom addressing.",
+    "Any claimed global sensing, localization or counter-resonance capability requires independent experimental evidence."
+  ],
+  "safety": {
+    "executableEmitterDesign": false,
+    "targetingInstructions": false,
+    "weaponizationInstructions": false
+  },
+  "sources": []
+}

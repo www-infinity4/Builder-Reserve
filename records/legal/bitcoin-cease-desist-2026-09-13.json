@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "bitcoin-cease-desist-2026-09-13",
+  "recordType": "user-supplied-legal-notice",
+  "title": "Formal Notice and Demand to Cease and Desist — Bitcoin",
+  "issued": "2026-09-13",
+  "issuer": {
+    "name": "Kristopher Jacob Watson",
+    "assertedIdentifiers": [
+      "King Watson of Yugoslavia",
+      "Jjacob of the Bible"
+    ],
+    "identifierStatus": "user-asserted-unverified"
+  },
+  "recipients": [
+    "United States Federal Government",
+    "Federal Reserve System and member institutions",
+    "federal agencies",
+    "government contractors",
+    "corporations",
+    "financial institutions",
+    "other persons or entities receiving the notice"
+  ],
+  "subject": "Holding, transfer, creation, control, facilitation, or other dealing in Bitcoin",
+  "demands": [
+    "Cease and desist from Bitcoin activity for purposes expressly objected to by the issuer.",
+    "Refrain from Bitcoin activity connected with activities directly concerning the issuer, the issuer's property, or asserted interests.",
+    "Preserve records relating to Bitcoin transactions or activities directly concerning the issuer, the issuer's property, or asserted interests."
+  ],
+  "reservations": [
+    "No waiver of asserted rights, claims, objections, or remedies.",
+    "All asserted rights and remedies reserved."
+  ],
+  "legalStatus": "user-asserted-unverified",
+  "interpretationRules": [
+    "Preserve this as the issuer's stated notice and position.",
+    "Do not represent asserted titles or identities as independently verified.",
+    "Do not represent receipt of this record as creating jurisdiction, ownership, governmental authority, or binding obligations.",
+    "Do not state that this notice controls Bitcoin generally or binds unrelated parties without applicable legal authority.",
+    "Legal effect must be evaluated under applicable law and facts by a qualified legal professional."
+  ]
+}

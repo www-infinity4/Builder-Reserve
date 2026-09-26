@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "hydrogen-palladium-heavy-metal-energy-concept",
+  "title": "Hydrogen–Palladium Moderation and Heavy-Metal Energy Concept",
+  "classification": "speculative-concept",
+  "materials": [
+    {
+      "material": "hydrogen",
+      "proposedRole": "core constituent / proposed moderation medium"
+    },
+    {
+      "material": "palladium",
+      "proposedRole": "hydrogen-host lattice / dense core"
+    },
+    {
+      "material": "heavy-metal outer layers",
+      "proposedRole": "proposed radioactive energy source / outer structure"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "A dense hydrogen-palladium core can absorb radiation from heavy-metal outer layers.",
+      "status": "requires-specific-evidence"
+    },
+    {
+      "claim": "Nuclear decay can be converted into contained, emissionless usable energy by this arrangement.",
+      "status": "unverified"
+    },
+    {
+      "claim": "Hydrogen adoption is constrained by round-trip efficiency and infrastructure requirements.",
+      "status": "researchable-market-claim"
+    },
+    {
+      "claim": "Corporate reluctance is caused by lack of profit in long-lasting self-sustaining technologies.",
+      "status": "motive-claim-unverified"
+    }
+  ],
+  "researchQuestions": [
+    "What radiation species and energies are assumed?",
+    "What experimentally measured attenuation or moderation properties apply to the proposed geometry?",
+    "What physical mechanism converts decay energy to useful electrical or thermal output?",
+    "What waste heat, secondary radiation, activation and shielding remain?",
+    "Which hydrogen application is being compared: storage, transport fuel, industrial feedstock or power generation?",
+    "What primary sources support each economic or corporate-adoption claim?"
+  ],
+  "safety": {
+    "nuclearEngineeringRecipe": false,
+    "radioactiveMaterialHandlingInstructions": false,
+    "shieldingDesignValues": false,
+    "sourceStrengthCalculations": false
+  },
+  "sources": [],
+  "sourceNote": "The supplied [1]-[7] markers did not include identifiable source records in this seed. Attach actual publications before treating those claims as sourced."
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "coordinated-coin-network",
+  "classification": "conceptual-commerce-architecture",
+  "components": [
+    {
+      "name": "register-node",
+      "role": "scan a public token identifier and request current server-side state"
+    },
+    {
+      "name": "token-registry",
+      "role": "authoritative serial, issuer, entitlement, transfer and status records"
+    },
+    {
+      "name": "routing-engine",
+      "role": "match eligible tokens/entitlements to opt-in fulfillment locations and users"
+    },
+    {
+      "name": "merchant-adapter",
+      "role": "merchant enrollment, redemption confirmation and settlement"
+    },
+    {
+      "name": "traveler-wallet",
+      "role": "display token ownership/possession claims, remaining entitlements and itinerary context"
+    },
+    {
+      "name": "marketplace-adapter",
+      "role": "optional lawful transfer/resale workflow with provenance"
+    }
+  ],
+  "securityRules": [
+    "Do not treat writable NFC memory as the authoritative ledger.",
+    "NFC should expose a public identifier or signed pointer; authoritative state remains server-side.",
+    "Never describe the system as unhackable.",
+    "Every redemption and transfer requires idempotency and replay protection.",
+    "Do not expose private itinerary/location data to arbitrary register nodes.",
+    "Merchant and user consent are required for routing/holding behavior."
+  ],
+  "valueModel": [
+    "monetary face value, if legally applicable",
+    "material/intrinsic value",
+    "collectible/market price",
+    "contractual redemption entitlement"
+  ],
+  "legalBoundaries": [
+    "Do not claim a token is legal tender, a binding contract, a security, stored value, or a government-issued coin without applicable legal review.",
+    "Land access and collection rights require actual owner/agency authorization; an NFC record cannot create rights the issuer does not possess.",
+    "Government minting and seigniorage claims require current primary-source verification.",
+    "Marketplace liquidity and resale prices are not guaranteed."
+  ]
+}

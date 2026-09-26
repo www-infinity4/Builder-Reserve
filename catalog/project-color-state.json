@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "id": "project-color-state-catalog",
+  "colorLanguage": {
+    "yellow": {
+      "name": "Exact extraction",
+      "rule": "Word-for-word extraction only. No coding, guessing, filling gaps, inference, or color bleed."
+    },
+    "purple": {
+      "name": "Assimilation",
+      "rule": "Combine and organize established material into the broader catalog/system."
+    },
+    "orange": {
+      "name": "CEO decision",
+      "rule": "A decision or unresolved executive choice is required before implementation proceeds."
+    },
+    "blue": {
+      "name": "Import / push",
+      "rule": "Selected material is being imported, pushed, indexed, or integrated."
+    },
+    "green": {
+      "name": "Implemented / verified",
+      "rule": "Use Green only when the relevant implementation has been verified against concrete pass/fail criteria."
+    },
+    "pink": {
+      "name": "Investigation / hypothesis",
+      "rule": "Requires investigation, testing, or separation of hypothesis from established evidence."
+    },
+    "red": {
+      "name": "Blocked / reroute",
+      "rule": "Access, authentication, external dependency, or another blocker requires rerouting/investigation."
+    }
+  },
+  "currentBlock": {
+    "color": "purple",
+    "name": "Assimilation",
+    "description": "Apply the color language across the project catalog."
+  },
+  "nextBlock": {
+    "color": "orange",
+    "name": "CEO decision",
+    "description": "Choose which unresolved project moves first."
+  },
+  "candidate": {
+    "project": "StarQuest playback and ledger verification",
+    "status": "candidate-not-selected",
+    "passFail": [
+      "Opening title rotates.",
+      "Internet Archive overlays do not cover YouTube playback.",
+      "Broken titles are excluded.",
+      "A share advances 5/10 to 6/10.",
+      "Playback longer than ten seconds persists in watch history."
+    ]
+  },
+  "catalog": [
+    {
+      "project": "Color-coded navigation language",
+      "colors": [
+        "purple"
+      ],
+      "state": "Definitions established; assimilating into broader catalog."
+    },
+    {
+      "project": "Omniscape conversation management",
+      "colors": [
+        "purple"
+      ],
+      "state": "Designed to unite conversations, files, media, app state, search, and project history."
+    },
+    {
+      "project": "GitHub root portal and repository index",
+      "colors": [
+        "blue"
+      ],
+      "state": "www-infinity4/INFINITY selected as central portal; registry and broader repository imports remain."
+    },
+    {
+      "project": "StarQuest playback and rotation",
+      "colors": [
+        "green",
+        "pink"
+      ],
+      "state": "Rotation, PiP, and playback fixes engineered; broken Internet Archive sources and overlays still require investigation."
+    },
+    {
+      "project": "StarQuest StarCoin and watch ledger",
+      "colors": [
+        "green"
+      ],
+      "state": "PRs #106/#107 reported merged; Worker/D1/secrets reported connected; retained 5/10 and next-share 6/10 require live verification before closure."
+    },
+    {
+      "project": "Cosmo assistant and HI-FI architecture",
+      "colors": [
+        "purple"
+      ],
+      "state": "Media analysis, reactive audio, collaboration services, agent workers, validation, and release stages combined into one architecture."
+    },
+    {
+      "project": "Infinity unified wallet and mint",
+      "colors": [
+        "purple",
+        "orange"
+      ],
+      "state": "Components specified/prototyped; treasury authority, valuation, issuance, taxation, and real-world payment rules require decisions."
+    },
+    {
+      "project": "Upgraded Infinity note",
+      "colors": [
+        "blue"
+      ],
+      "state": "Replacement design and main-site import/merge requested; live deployment must be verified."
+    },
+    {
+      "project": "Goudey Tradition Card Museum",
+      "colors": [
+        "orange"
+      ],
+      "state": "OpenSea/Base pilot, rights audit, protected-element replacement, and WalletConnect selected; deployment/minting require transaction evidence."
+    },
+    {
+      "project": "Disney Academia cards",
+      "colors": [
+        "green"
+      ],
+      "state": "Locked visual direction and active 350-card educational program; individual cards remain continuing production."
+    },
+    {
+      "project": "Musk, Cosmo, and Apprentice card sets",
+      "colors": [
+        "yellow",
+        "green"
+      ],
+      "state": "Concepts/cards exist; unfinished prompts require exact extraction before production continues."
+    },
+    {
+      "project": "Movie/song coin cards",
+      "colors": [
+        "orange"
+      ],
+      "state": "1/1 screen-capture rule decided; rights, capture, metadata, and production mechanics unresolved."
+    },
+    {
+      "project": "Tech-Machinist-Bros learning game",
+      "colors": [
+        "green",
+        "yellow"
+      ],
+      "state": "Core direction exists; next 90 scenarios require precise extraction and development."
+    },
+    {
+      "project": "Time-travel and hydrogen doorway concepts",
+      "colors": [
+        "pink"
+      ],
+      "state": "Hypotheses requiring separation of symbolic theory, testable claims, known physics, and proposed experiments."
+    },
+    {
+      "project": "Ezekiel’s Vision / Data-Cosmos",
+      "colors": [
+        "purple",
+        "pink"
+      ],
+      "state": "Five-stage architecture conceptually assembled; security and physical-computing claims require testing."
+    },
+    {
+      "project": "IBM watsonx and external-agent switchboard",
+      "colors": [
+        "red",
+        "pink"
+      ],
+      "state": "Prior access attempts reported authentication/bot-protection barriers; reroute/investigation, not completed engineering."
+    },
+    {
+      "project": "Cloudflare and Vercel deployment layer",
+      "colors": [
+        "blue",
+        "green"
+      ],
+      "state": "Some deployments reported complete; each repository still needs its own verified deployment record."
+    }
+  ]
+}

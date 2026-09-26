@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "alpha-beta-gamma-delta-temporal-map",
+  "classification": "interpretive-framework",
+  "variables": [
+    {
+      "symbol": "alpha",
+      "meaning": "starting point or beginning of a cycle",
+      "dimension": "origin"
+    },
+    {
+      "symbol": "beta",
+      "meaning": "lived experience, processing, or active duration",
+      "dimension": "process"
+    },
+    {
+      "symbol": "gamma",
+      "meaning": "conclusion or very end of a life or event",
+      "dimension": "endpoint"
+    },
+    {
+      "symbol": "delta",
+      "meaning": "fourth variable used to establish an added spatial/reference coordinate and calculate shifts from baseline",
+      "dimension": "change/reference"
+    }
+  ],
+  "temporalModel": {
+    "past": [
+      "alpha",
+      "beta"
+    ],
+    "future": [
+      "gamma"
+    ],
+    "notes": "The framework may be used to organize narratives and scenarios. It is not, by itself, a mechanism for predicting future events."
+  },
+  "analogy": {
+    "name": "Futures Triangle",
+    "status": "conceptual-analogy",
+    "notes": "Keep as an analytical comparison; do not claim mathematical equivalence without a defined mapping."
+  },
+  "elementReference": {
+    "atomicNumber": 70,
+    "element": "Ytterbium",
+    "symbol": "Yb",
+    "factualRole": "rare-earth element with technological uses including some laser and precision-measurement applications",
+    "symbolicRole": "May be referenced separately by the framework, but atomic number 70 does not establish timeline-reading or future-prediction capability."
+  },
+  "rules": [
+    "Keep symbolic numbers separate from periodic-table facts.",
+    "Do not convert narrative coordinates into claims of physical time travel or future perception.",
+    "Any mathematical use of delta must define its coordinates, units, baseline and transformation explicitly."
+  ]
+}

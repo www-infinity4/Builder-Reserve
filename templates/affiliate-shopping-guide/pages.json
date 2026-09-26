@@ -1,0 +1,17 @@
+{
+  "schemaVersion":1,
+  "siteType":"affiliate-shopping-guide",
+  "pages":{
+    "home":["site-header","gift-search","product-results","affiliate-disclosure","site-footer"],
+    "results":["site-header","gift-search","product-results","unified-wallet-host","site-footer"],
+    "gift":["site-header","commerce-product-detail","unified-wallet-host","site-footer"],
+    "wallet":["site-header","unified-wallet-host","site-footer"],
+    "about-disclosure":["site-header","affiliate-disclosure","site-footer"]
+  },
+  "rules":[
+    "A theme may restyle or reorder compatible components but must preserve required capabilities.",
+    "Product merchant actions must use normalized product destinations and attribution.",
+    "Wallet host renders shared wallet state; it does not calculate authoritative balances.",
+    "Disclosure must remain reachable anywhere monetized product recommendations appear."
+  ]
+}

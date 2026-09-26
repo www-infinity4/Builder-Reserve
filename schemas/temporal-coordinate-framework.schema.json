@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "temporal-coordinate-framework.schema.json",
+  "title": "Temporal Coordinate Framework",
+  "type": "object",
+  "required": [
+    "id",
+    "variables",
+    "temporalModel",
+    "rules"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "classification": {
+      "type": "string"
+    },
+    "variables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "symbol",
+          "meaning",
+          "dimension"
+        ],
+        "properties": {
+          "symbol": {
+            "type": "string"
+          },
+          "meaning": {
+            "type": "string"
+          },
+          "dimension": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "temporalModel": {
+      "type": "object"
+    },
+    "analogy": {
+      "type": "object"
+    },
+    "elementReference": {
+      "type": "object"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
