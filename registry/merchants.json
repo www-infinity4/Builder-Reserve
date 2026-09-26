@@ -1,0 +1,12 @@
+{
+  "schemaVersion":1,
+  "connectors":[],
+  "instructions":[
+    "Add a merchant only after its official affiliate/product-access requirements are known.",
+    "Do not invent API endpoints, affiliate IDs, credentials, prices or availability.",
+    "Normalize merchant results through Commerce Phi before product cards consume them.",
+    "Keep credentials server-side when a merchant requires secrets.",
+    "A connector may support product discovery without supporting commission reporting."
+  ],
+  "planned":["general-affiliate-network-adapter","retailer-product-feed-adapter"]
+}
