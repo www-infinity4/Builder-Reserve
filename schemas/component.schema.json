@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://www-infinity4.github.io/Builder-Reserve/schemas/component.schema.json",
+  "title":"Infinity Builder Component",
+  "type":"object",
+  "required":["id","role","requires","slots"],
+  "properties":{
+    "id":{"type":"string","pattern":"^[a-z0-9-]+$"},
+    "role":{"enum":["header","search","results","product-card","product-detail","wallet-host","share-actions","disclosure","footer"]},
+    "requires":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "slots":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "data":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "rules":{"type":"array","items":{"type":"string"}}
+  }
+}
