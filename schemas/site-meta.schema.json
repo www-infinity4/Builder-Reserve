@@ -1,0 +1,14 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"site-meta.schema.json",
+  "title":"Generated Site Metadata",
+  "type":"object",
+  "required":["title","description","canonical","openGraph","twitter"],
+  "properties":{
+    "title":{"type":"string","minLength":1},
+    "description":{"type":"string","minLength":1},
+    "canonical":{"type":"string","format":"uri"},
+    "openGraph":{"type":"object","required":["title","description","url","image"],"properties":{"title":{"type":"string"},"description":{"type":"string"},"url":{"type":"string","format":"uri"},"image":{"type":"string","format":"uri"}}},
+    "twitter":{"type":"object","required":["card","title","description","image"],"properties":{"card":{"enum":["summary","summary_large_image"]},"title":{"type":"string"},"description":{"type":"string"},"image":{"type":"string","format":"uri"}}}
+  }
+}
