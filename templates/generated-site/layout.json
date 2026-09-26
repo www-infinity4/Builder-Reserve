@@ -1,0 +1,24 @@
+{
+  "schemaVersion":1,
+  "name":"Infinity Generated Site Layout",
+  "directories":{
+    "root":["index.html","site.json","README.md"],
+    "assets":["assets/css/site.css","assets/js/site.js"],
+    "components":["components/product-card.js","components/wallet-host.js"],
+    "adapters":["adapters/modules.js","adapters/commerce.js"],
+    "pages":["pages/"],
+    "config":["config/runtime.example.js"],
+    "tests":["tests/smoke.test.js"]
+  },
+  "ownership":{
+    "generatedSite":["theme","layout","site copy","page composition","non-secret runtime config"],
+    "sharedModules":["wallet accounting","identity","commerce normalization","attribution rules","shared analytics contracts"],
+    "serverOnly":["API secrets","affiliate credentials","conversion callbacks","ledger credentials"]
+  },
+  "rules":[
+    "Never copy shared module source into a generated site when it can be imported or referenced.",
+    "Never commit secrets to generated-site files.",
+    "Frontend redeploy must not reset authoritative balances or commission records.",
+    "Generated adapters may translate site UI events but may not redefine ledger or commission authority."
+  ]
+}
