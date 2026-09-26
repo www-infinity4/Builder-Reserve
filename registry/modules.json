@@ -4,42 +4,138 @@
   "rule": "Resolve a registered capability before generating replacement code.",
   "modules": [
     {
-      "id":"unified-wallet","version":"0.1.0","kind":"wallet",
-      "source":{"repository":"www-infinity4/Unified-Wallet","entrypoint":"src/index.ts"},
-      "capabilities":["wallet-ui","starcoin-balance","ledger-adapter","cloudflare-adapter"],
-      "authority":"cloud-ledger",
-      "install":{"strategy":"package","package":"@infinity4/unified-wallet"},
-      "requires":["starquest-identity"],
-      "forbids":["site-owned-money-ledger","balance-reset-on-deploy","client-selected-reward"]
+      "id": "unified-wallet",
+      "version": "0.1.0",
+      "kind": "wallet",
+      "source": {
+        "repository": "www-infinity4/Unified-Wallet",
+        "entrypoint": "src/index.ts"
+      },
+      "capabilities": [
+        "wallet-ui",
+        "starcoin-balance",
+        "ledger-adapter",
+        "cloudflare-adapter"
+      ],
+      "authority": "cloud-ledger",
+      "install": {
+        "strategy": "package",
+        "package": "@infinity4/unified-wallet"
+      },
+      "requires": [
+        "starquest-identity"
+      ],
+      "forbids": [
+        "site-owned-money-ledger",
+        "balance-reset-on-deploy",
+        "client-selected-reward"
+      ]
     },
     {
-      "id":"starquest-identity","version":"1","kind":"identity",
-      "source":{"repository":"www-infinity4/TV-Database","entrypoint":"js/starquest-cloud-ledger.js"},
-      "capabilities":["shared-session","authenticated-ledger-fetch"],
-      "authority":"cloud-service",
-      "install":{"strategy":"script","url":"https://www-infinity4.github.io/TV-Database/js/starquest-cloud-ledger.js"},
-      "requires":[],
-      "forbids":["duplicate-site-identity"]
+      "id": "starquest-identity",
+      "version": "1",
+      "kind": "identity",
+      "source": {
+        "repository": "www-infinity4/TV-Database",
+        "entrypoint": "js/starquest-cloud-ledger.js"
+      },
+      "capabilities": [
+        "shared-session",
+        "authenticated-ledger-fetch"
+      ],
+      "authority": "cloud-service",
+      "install": {
+        "strategy": "script",
+        "url": "https://www-infinity4.github.io/TV-Database/js/starquest-cloud-ledger.js"
+      },
+      "requires": [],
+      "forbids": [
+        "duplicate-site-identity"
+      ]
     },
     {
-      "id":"control-phi","version":"1.8.1","kind":"actions",
-      "source":{"repository":"www-infinity4/Control-Phi","entrypoint":"control-phi.js"},
-      "capabilities":["shared-navigation","share-bridge","collect-action","wallet-surface"],
-      "authority":"shared-module",
-      "install":{"strategy":"script","url":"https://www-infinity4.github.io/Control-Phi/control-phi.js"},
-      "requires":["unified-wallet","starquest-identity"],
-      "status":"migration-needed",
-      "migrationTarget":"StarQuest/D1 must become sole StarCoin credit authority."
+      "id": "control-phi",
+      "version": "1.8.1",
+      "kind": "actions",
+      "source": {
+        "repository": "www-infinity4/Control-Phi",
+        "entrypoint": "control-phi.js"
+      },
+      "capabilities": [
+        "shared-navigation",
+        "share-bridge",
+        "collect-action",
+        "wallet-surface"
+      ],
+      "authority": "shared-module",
+      "install": {
+        "strategy": "script",
+        "url": "https://www-infinity4.github.io/Control-Phi/control-phi.js"
+      },
+      "requires": [
+        "unified-wallet",
+        "starquest-identity"
+      ],
+      "status": "migration-needed",
+      "migrationTarget": "StarQuest/D1 must become sole StarCoin credit authority."
     },
     {
-      "id":"quanta-search-ledger","version":"1","kind":"search",
-      "source":{"repository":"www-infinity4/QuantaPhi","entrypoint":"workers/quanta-phi-ledger"},
-      "capabilities":["initial-search-mint","quant-provenance","idempotent-search"],
-      "authority":"cloud-ledger",
-      "install":{"strategy":"service"},
-      "requires":["starquest-identity"],
-      "forbids":["mint-on-refinement","client-created-quant"]
+      "id": "quanta-search-ledger",
+      "version": "1",
+      "kind": "search",
+      "source": {
+        "repository": "www-infinity4/QuantaPhi",
+        "entrypoint": "workers/quanta-phi-ledger"
+      },
+      "capabilities": [
+        "initial-search-mint",
+        "quant-provenance",
+        "idempotent-search"
+      ],
+      "authority": "cloud-ledger",
+      "install": {
+        "strategy": "service"
+      },
+      "requires": [
+        "starquest-identity"
+      ],
+      "forbids": [
+        "mint-on-refinement",
+        "client-created-quant"
+      ]
+    },
+    {
+      "id": "commerce-phi",
+      "version": "0.1.0-seed",
+      "kind": "commerce",
+      "source": {
+        "repository": "www-infinity4/Builder-Reserve",
+        "entrypoint": "modules/commerce-phi/commerce-phi.json"
+      },
+      "capabilities": [
+        "product-search",
+        "product-card",
+        "affiliate-attribution",
+        "merchant-adapters",
+        "commerce-analytics",
+        "affiliate-disclosure"
+      ],
+      "authority": "shared-module",
+      "install": {
+        "strategy": "generated-adapter"
+      },
+      "requires": [
+        "starquest-identity"
+      ],
+      "forbids": [
+        "invented-conversion",
+        "invented-current-price",
+        "site-specific-merchant-lock-in"
+      ]
     }
   ],
-  "plannedModules":["commerce-phi","affiliate-attribution","product-feed","merchant-adapters","analytics-phi","disclosure-privacy"]
+  "plannedModules": [
+    "commerce-analytics-backend",
+    "merchant-connectors"
+  ]
 }
