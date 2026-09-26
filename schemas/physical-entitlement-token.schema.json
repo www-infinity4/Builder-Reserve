@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "physical-entitlement-token.schema.json",
+  "title": "Physical Entitlement Token",
+  "type": "object",
+  "required": [
+    "tokenId",
+    "serial",
+    "issuer",
+    "entitlements",
+    "status"
+  ],
+  "properties": {
+    "tokenId": {
+      "type": "string"
+    },
+    "serial": {
+      "type": "string"
+    },
+    "issuer": {
+      "type": "string"
+    },
+    "physical": {
+      "type": "object",
+      "properties": {
+        "material": {
+          "type": "string"
+        },
+        "massGrams": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "faceValue": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "nfc": {
+      "type": "object",
+      "properties": {
+        "publicId": {
+          "type": "string"
+        },
+        "recordPointer": {
+          "type": "string"
+        },
+        "signatureRef": {
+          "type": "string"
+        }
+      }
+    },
+    "entitlements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "remaining"
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "remaining": {
+            "type": "number"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "expiresAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "transfer": {
+      "type": "object",
+      "properties": {
+        "transferable": {
+          "type": "boolean"
+        },
+        "rulesRef": {
+          "type": "string"
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "issued",
+        "active",
+        "held",
+        "redeemed",
+        "expired",
+        "revoked"
+      ]
+    },
+    "provenance": {
+      "type": "object"
+    }
+  }
+}
