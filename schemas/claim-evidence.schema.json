@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "claim-evidence.schema.json",
+  "title": "Claim Evidence Link",
+  "type": "object",
+  "required": [
+    "claimId",
+    "claim",
+    "status",
+    "evidence"
+  ],
+  "properties": {
+    "claimId": {
+      "type": "string"
+    },
+    "claim": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "unverified",
+        "supported",
+        "partially-supported",
+        "contradicted",
+        "mixed",
+        "not-testable"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "relationship",
+          "source"
+        ],
+        "properties": {
+          "relationship": {
+            "enum": [
+              "supports",
+              "contradicts",
+              "context",
+              "method"
+            ]
+          },
+          "source": {
+            "type": "object",
+            "required": [
+              "title",
+              "url"
+            ],
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "publisher": {
+                "type": "string"
+              },
+              "published": {
+                "type": "string"
+              },
+              "doi": {
+                "type": "string"
+              }
+            }
+          },
+          "evidenceType": {
+            "enum": [
+              "peer-reviewed-experiment",
+              "peer-reviewed-theory",
+              "review",
+              "standard",
+              "government-data",
+              "manufacturer-data",
+              "market-data",
+              "news",
+              "other"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
