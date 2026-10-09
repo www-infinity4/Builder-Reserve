@@ -60,8 +60,13 @@ function render(){
     if(pane){pane.remove();return}
     pane=document.createElement('div');pane.className='reserve-article';
     const h=document.createElement('h3');h.textContent=art.title||'Collected research Quant';
-    const p=document.createElement('p');p.textContent=art.synthesis||art.abstract||'Article evidence pending';
-    pane.append(h,p);
+    pane.appendChild(h);
+    [['Question',art.question],['Abstract',art.abstract],['Research synthesis',art.synthesis],['Introduction',art.introduction],['Methods',art.methods],['Results',art.results],['Discussion',art.discussion],['Conclusion',art.conclusion]].forEach(([name,body])=>{
+      if(!body)return;
+      const sub=document.createElement('h4');sub.textContent=name;
+      const paragraph=document.createElement('p');paragraph.textContent=body;
+      pane.append(sub,paragraph);
+    });
     (art.sources||[]).slice(0,10).forEach(src=>{
      if(!/^https:\/\//.test(src.url||''))return;
      const link=document.createElement('a');link.href=src.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=src.title||src.url;pane.appendChild(link);
